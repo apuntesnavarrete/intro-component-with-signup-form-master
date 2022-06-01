@@ -53,22 +53,31 @@ body{
 }
 .main_button-offer{
     width: 90%;
-    height: 60px;
+    height: 70px;
     background-color: var(--Blue);
     border-radius: 10px;
     border: 0px solid black;
     color: white;
     font-size: 0.8em;
-    padding: 0 30px;
+    padding: 0 44px;
+    line-height: 1.5;
+    font-weight: 400;
+    box-shadow: 0px 2px 9px 0px var(--Dark-Blue);
+
+
+}
+.main_button-offer span{
+    font-weight: 600;
 }
 .main_form{
     width: 90%;
-    margin: 10px 0;
+    margin: 10px 0 20px 0;
     background-color: white;
     padding: 20px;
     display: flex;
     flex-direction: column;
     border-radius: 10px;
+    box-shadow: 0px 2px 9px 0px var(--Dark-Blue);
 
 }
 .main_input{
@@ -77,23 +86,28 @@ body{
     height: 50px;
     padding-left: 10px;
     border: 0.5px solid var(--Grayish-Blue);
-
+    font-size: 0.8em;
+    font-weight: 500;
 
 }
 .main_button{
-    text-transform: lowercase;
+    text-transform: uppercase;
     height: 40px;
     background-color: var(--Green);
     border: 0px;
     border-radius: 3px;
     color: white;
     font-size: 0.8em;
+    font-weight: 500;
 
 }
 .main_form-description {
     font-size: 0.6em;
     margin-top: 10px;
     color: var(--Grayish-Blue);
+}
+.main_form-description span{
+    color: var(--Red);
 }
 
 @media (min-width: 800px) {
