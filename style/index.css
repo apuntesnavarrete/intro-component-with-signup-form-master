@@ -17,7 +17,7 @@
 
 body{
     background-color: var(--Red);
-    background-image: url(images/bg-intro-mobile.png);
+    background-image: url(../images/bg-intro-mobile.png);
     font-size: 1rem;
     font-family: 'Poppins', sans-serif;
     height: 100vh;
@@ -115,7 +115,7 @@ body{
        font-size: 2rem;
        flex-direction: row;
        justify-content: center;
-       background-image: url(images/bg-intro-desktop.png);
+       background-image: url(../images/bg-intro-desktop.png);
 
    }
    .header{
