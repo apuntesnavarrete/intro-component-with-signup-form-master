@@ -110,7 +110,10 @@ body{
     color: var(--Red);
 }
 
-@media (min-width: 800px) {
+
+
+
+@media (min-width: 1000px) {
    body{
        font-size: 2rem;
        flex-direction: row;
