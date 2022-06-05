@@ -1,189 +1,179 @@
-:root{
-    
---Red: hsl(0, 100%, 74%) ;
---Green: hsl(154, 59%, 51%);
+:root {
+  --Red: hsl(0, 100%, 74%);
+  --Green: hsl(154, 59%, 51%);
 
---Blue: hsl(248, 32%, 49%);
+  --Blue: hsl(248, 32%, 49%);
 
---Dark-Blue: hsl(249, 10%, 26%); 
---Grayish-Blue: hsl(246, 25%, 77%);
+  --Dark-Blue: hsl(249, 10%, 26%);
+  --Grayish-Blue: hsl(246, 25%, 77%);
+
+  --white: rgb(242, 238, 238);
 }
 
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
-body{
-    background-color: var(--Red);
-    background-image: url(../images/bg-intro-mobile.png);
-    font-size: 1rem;
-    font-family: 'Poppins', sans-serif;
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+body {
+  background-color: var(--Red);
+  background-image: url(../images/bg-intro-mobile.png);
+  font-size: 1rem;
+  font-family: "Poppins", sans-serif;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.header {
+  width: 300px;
+  text-align: center;
+}
+.header_title {
+  font-size: 1.4em;
+  margin-top: 50px;
+  color: var(--white);
+}
+.header_description {
+  color: var(--white);
+  font-size: 0.8em;
+  line-height: 1.5;
+  padding: 0 22px;
+}
+.main {
+  width: 300px;
+  text-align: center;
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.main_button-offer {
+  width: 90%;
+  height: 70px;
+  background-color: var(--Blue);
+  border-radius: 10px;
+  border: 0px solid var(--white);
+  color: var(--white);
+  font-size: 0.8em;
+  padding: 0 44px;
+  line-height: 1.5;
+  font-weight: 400;
+  box-shadow: 0px 2px 9px 0px var(--Dark-Blue);
 
+  cursor: pointer;
 }
-.header{
-    width: 300px;
-    text-align: center;
+.main_button-offer span {
+  font-weight: 600;
 }
-.header_title{
-    font-size: 1.4em;
-    margin-top: 50px;
-    color: white;
+.main_form {
+  width: 90%;
+  margin: 10px 0 20px 0;
+  background-color: var(--white);
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+  box-shadow: 0px 2px 9px 0px var(--Dark-Blue);
 }
-.header_description{
-    color: white;
-    font-size: 0.8em;
-    line-height: 1.5;
-    padding: 0 22px;
-
+.main_input {
+  border-radius: 3px;
+  height: 50px;
+  padding-left: 10px;
+  border: 0.5px solid var(--Grayish-Blue);
+  font-size: 0.8em;
+  font-weight: 500;
+  width: 100%;
+  color: var(--Dark-Blue);
 }
-.main{
-    width: 300px;
-    text-align: center;
-    margin-top: 40px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-
-}
-.main_button-offer{
-    width: 90%;
-    height: 70px;
-    background-color: var(--Blue);
-    border-radius: 10px;
-    border: 0px solid black;
-    color: white;
-    font-size: 0.8em;
-    padding: 0 44px;
-    line-height: 1.5;
-    font-weight: 400;
-    box-shadow: 0px 2px 9px 0px var(--Dark-Blue);
-
-
-}
-.main_button-offer span{
-    font-weight: 600;
-}
-.main_form{
-    width: 90%;
-    margin: 10px 0 20px 0;
-    background-color: white;
-    padding: 20px;
-    display: flex;
-    flex-direction: column;
-    border-radius: 10px;
-    box-shadow: 0px 2px 9px 0px var(--Dark-Blue);
-
-}
-.main_input{
-    border-radius: 3px;
-    height: 50px;
-    padding-left: 10px;
-    border: 0.5px solid var(--Grayish-Blue);
-    font-size: 0.8em;
-    font-weight: 500;
-    width: 230px;
-
-
-}
-.main_input:focus{
-    outline: 0px solid black;
+.main_input:focus {
+  outline: 0px solid var(--white);
 }
 
-.main_button{
-    text-transform: uppercase;
-    height: 40px;
-    background-color: var(--Green);
-    border: 0px;
-    border-radius: 3px;
-    color: white;
-    font-size: 0.8em;
-    font-weight: 500;
-    cursor: pointer;
+.main_button {
+  text-transform: uppercase;
+  height: 40px;
+  background-color: var(--Green);
+  border: 0px;
+  border-radius: 3px;
+  color: var(--white);
+  font-size: 0.8em;
+  font-weight: 500;
+  cursor: pointer;
 }
-.main_button:hover{
-    opacity: 0.8;
+.main_button:hover {
+  opacity: 0.8;
 }
 .main_form-description {
-    font-size: 0.6em;
-    margin-top: 10px;
-    color: var(--Grayish-Blue);
+  font-size: 0.6em;
+  margin-top: 10px;
+  color: var(--Grayish-Blue);
 }
-.main_form-description span{
-    color: var(--Red);
+.main_form-description span {
+  color: var(--Red);
 }
-.caution{
-    text-align: end;
-    font-size: 0.6em;
-    margin: 2px 2px 20px 0;
-    color: var(--Red);
-    font-style: italic;
-    visibility: hidden;
+.caution {
+  text-align: end;
+  font-size: 0.6em;
+  margin: 2px 2px 20px 0;
+  color: var(--Red);
+  font-style: italic;
+  visibility: hidden;
 }
 .input-wrapper {
-	position: relative;
+  position: relative;
 }
 .input-icon {
-    display: none;
-	color: #191919;
-	position: absolute;
-	width: 20px;
-	height: 20px;
-	left: 200px;
-	top: 50%;
-	transform: translateY(-50%);
+  display: none;
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  left: 200px;
+  top: 50%;
+  transform: translateY(-50%);
 }
 
 @media (min-width: 1000px) {
-   body{
-       font-size: 2rem;
-       flex-direction: row;
-       justify-content: center;
-       background-image: url(../images/bg-intro-desktop.png);
-
-   }
-   .header{
-       width: 550px;
-       text-align: start;
-
-   }
-   .header_description{
-    padding: 0 ;
-
-   }
-   .main{
-       width: 550px;
-   }
-   .main_button-offer{
-       font-size: 0.5em;
-   }
-   .main_input{
-       font-size: 0.5em;
-       width: 423px;
-
-   }
-   .main_button{
-       font-size: 0.5em;
-       margin-top: 5px;
-       height: 55px;
-   }
-   .main_form{
-       padding: 35px;
-   }
-   .main_form-description{
-       font-size: 0.4em;
-       margin-top: 15px;
-
-   }
-   .caution{
-       font-size: 0.4em;
-   }
-   .input-icon{
-    left: 380px;
-   }
+  body {
+    font-size: 2rem;
+    flex-direction: row;
+    justify-content: center;
+    background-image: url(../images/bg-intro-desktop.png);
   }
+  .header {
+    width: 550px;
+    text-align: start;
+  }
+  .header_description {
+    padding: 0;
+  }
+  .main {
+    width: 550px;
+  }
+  .main_button-offer {
+    font-size: 0.5em;
+  }
+  .main_input {
+    font-size: 0.5em;
+    width: 100%;
+  }
+  .main_button {
+    font-size: 0.5em;
+    margin-top: 5px;
+    height: 55px;
+  }
+  .main_form {
+    padding: 35px;
+  }
+  .main_form-description {
+    font-size: 0.4em;
+    margin-top: 15px;
+  }
+  .caution {
+    font-size: 0.4em;
+  }
+  .input-icon {
+    left: 380px;
+  }
+}
