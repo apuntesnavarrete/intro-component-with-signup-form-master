@@ -14,13 +14,17 @@ let input_password = document.getElementsByClassName("main_input")[3];
 
 
 const expresiones = {
-  correo: /^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$/,
-};
+	usuario: /^[a-zA-Z0-9\_\-]{4,16}$/, // Letras, numeros, guion y guion_bajo
+	nombre: /^[a-zA-ZÀ-ÿ\s]{1,40}$/, // Letras y espacios, pueden llevar acentos.
+	password: /^.{4,12}$/, // 4 a 12 digitos.
+	correo: /^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$/,
+	telefono: /^\d{7,14}$/ // 7 a 14 numeros.
+}
 
 input_name.addEventListener("keyup", (e) => {
     let texto = e.target.value;
     console.log(texto);
-    if (expresiones.correo.test(texto)) {
+    if (expresiones.nombre.test(texto)) {
       console.log("nombre correcto")
       error_name.style.visibility = "hidden";
     } else {
@@ -34,7 +38,7 @@ input_name.addEventListener("keyup", (e) => {
 input_lastName.addEventListener("keyup", (e) => {
     let texto = e.target.value;
     console.log(texto);
-    if (expresiones.correo.test(texto)) {
+    if (expresiones.nombre.test(texto)) {
       console.log("apeido correcto")
       error_lastname.style.visibility = "hidden";
     } else {
@@ -61,7 +65,7 @@ input_email.addEventListener("keyup", (e) => {
 input_password.addEventListener("keyup", (e) => {
     let texto = e.target.value;
     console.log(texto);
-    if (expresiones.correo.test(texto)) {
+    if (expresiones.password.test(texto)) {
       console.log("password correcto")
       error_password.style.visibility = "hidden";
     } else {
